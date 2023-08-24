@@ -1,0 +1,116 @@
+<!-- css属性 
+     h1{color:blue}
+    选择器{
+        属性:属性值；
+        属性:属性值；
+        属性:属性值；
+        属性:属性值；
+    }-->
+    说明：
+    选择器：选中写样式的元素
+    最后一个键值对的分号可以省略
+
+    <!-- css样式、css属性
+         width:; 宽度
+         height:; 高度
+         background-color:; 背景颜色
+         color:; 字体颜色-->
+
+    <!-- 引入方式 学js时用
+         内联样式（行内样式）-->利用html的style属性(除了br,其他元素都有)
+         <p style="color: aquamarine;">css属性</p>
+    <!-- 例子 -->
+         <!DOCTYPE html>
+         <html lang="en">
+         <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+         </head>
+         <body>
+            <div style="width: 200px;height: 200px;background-color: aqua;"></div>
+            <p style="width: 200px;height: 200px;background-color: aqua;"></p>
+         </body>
+         </html>
+
+
+    <!-- 内部样式 只对当前页面生效-->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+         /* css属性
+            选择器{
+               属性:属性值;
+               属性:属性值;
+               属性:属性值;
+            } */
+            .box{
+               width: 200px;
+               height: 200px;
+               background-color: black;
+          }
+        </style>
+    </head>
+    <body>
+        <div class="box"></div>
+        <p class="box"></p>
+    </body>
+
+   <!-- 外部样式 -->
+    </html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+    <link rel="stylesheet" href="./css/01.css">
+    </head>
+    <body>
+     <div class="box"></div>
+     <p class="box"></p>
+    </body>
+    </html>
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <style>
+            .box{
+               background-color: brown;
+            }
+      </style>
+      <link rel="stylesheet" href="./css/02.css">
+    </head>
+    <body>
+      <div style="height: 200;width: 200;background-color: aquamarine;" class="box"></div>
+    </body>
+    </html>
+
+    <!-- 优先级
+   行内样式>内部样式=外部样式
+   相同的后写的生效 --> 
+
+   <!-- 导入式 在css中引入css -->
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <style>
+         @import"./css/01.css";
+      </style>
+   </head>
+   <body>
+      <div class="box"></div>
+   </body>
+   </html>
+

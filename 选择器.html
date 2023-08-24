@@ -1,0 +1,59 @@
+<!-- 选择器
+    1 全局选择器 通用选择器 *{}
+     选中页面所有的元素，当所有元素有共同的样式时可以使用，几乎用不到
+
+    2 元素选择器 标签 div{} p{}
+    所有html元素都可以是元素选择器 
+    3 类选择器 class 利用html的属性，除了br，其他元素都有属性
+     *className
+    class的命令规则：
+    @区分大小写
+    @不可以以数字开头
+    @可以包含数字，字母，符号
+    @起有意义的名字
+      类名可以重复，
+    4 ID选择器    利用html的属性，除了br，其他元素都有属性
+      #idName
+      id具有唯一性-->
+    行内样式> ID >类选择器优先级>元素选择器>全局选择器
+权重:1000    100       10           1
+相加,数越大优先级越高
+
+<hr>
+<!-- 合并选择器 -->
+   选择器1,选择器2,选择器3,...{
+        共同的样式
+   }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            color: aqua;
+        }
+        p{
+            color: blueviolet;
+        }
+        a{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div>盒子</div>
+    <div>盒子</div>
+    <div>盒子</div>
+    <div>盒子</div>
+    <p>段落</p>
+    <p>段落</p>
+    <a href="#">拉拉</a>
+</body>
+</html>
+
+
+
+<hr>
+,连接多个选择器

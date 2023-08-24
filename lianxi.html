@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* okay：利用边框透明实现 */
+        #okay{
+            position: relative;
+            /* 相对定位 */
+            background-color: red;
+            text-align: center;
+            line-height: 25px;
+            display: inline-block;
+            color: aliceblue;
+            font-size: 15px;
+        }
+        #okay::after{
+            content: "";
+            position: absolute;
+            /* 绝对定位 */
+            border: 5px solid transparent;
+            /* transparent：此处定义边框线透明
+                background：transparent则为背景透明
+            solid：定义边框线为实线
+               thin：细线  mediu：中粗线  thick：粗线 */
+            border-left-color:red ;
+            top: 30%;
+        }
+
+    /* 对话框三角 */
+        .img2{
+    position: fixed;
+    width: 0px;
+    height: 0px;
+    background-color: aqua;
+    top: 504px;
+    left: 248px;
+    text-align: center;
+    line-height: 100px;
+    border-top: 20px solid transparent;
+    border-right: 30px solid transparent ;
+    border-bottom: 20px solid transparent;
+    border-left: 30px solid ghostwhite;
+    }
+    </style>
+</head>
+<body>
+    <div class="#okay" id="okcy">
+        
+    </div>
+</body>
+</html>
